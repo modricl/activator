@@ -1,0 +1,30 @@
+{
+    "name": "modricl/activator",
+    "description": "Temporary activation code generator",
+    "keywords": ["modricl", "activator"],
+    "license": "MIT",
+    "type": "project",
+    "homepage": "https://github.com/modricl/activator",
+    "authors": [
+        {
+          "name": "Luka Modric",
+          "email": "luka@modric.org"
+        }
+      ],
+      "require": {
+        "laravel/framework": ">=6.0",
+        "php": ">=7.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modricl\\Activator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modricl\\Activator\\ActivatorServiceProvider"
+            ]
+        }
+    }
+}
